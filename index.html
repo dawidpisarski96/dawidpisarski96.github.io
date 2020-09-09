@@ -1,0 +1,87 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+    <link rel="stylesheet" href="css/main.css" />
+  </head>
+  <body>
+    <header>
+      <nav>
+        <ul>
+          <li><a href="#page">About Me</a></li>
+          <li><a href="#portfolio">Portfolio</a></li>
+          <li><a href="#contact" class="contact">Contact</a></li>
+        </ul>
+      </nav>
+      <h1>
+        Hi I'm <br />
+        <span class="typing_name"></span>
+      </h1>
+      <h2>I code and design <span class="typing_web">websites</span></h2>
+      <a href="#" class="pink_btn"> Let's Talk</a>
+    </header>
+
+    <div class="about_me">
+        <p id="page"></p>
+        <div class="photo_section">
+            <div class="box"></div>
+            <div class="second_box"></div>
+            <div class="third_box"></div>
+            <img class="photo_hero" src="css/photo_boy.svg" alt="" />
+        </div>
+        <div class="copy_section">
+          <p class="copy_about_me">Lorem ipsum dolor sit amet consectetur adipisicing elit. Nostrum, natus. Lorem ipsum dolor sit amet consectetur adipisicing elit. Nostrum, natus Lorem ipsum dolor sit amet consectetur adipisicing elit. Nostrum, natus Lorem Lorem ipsum dolor sit amet consectetur adipisicing elit. Nostrum, natus Lorem ipsum dolor sit amet consectetur adipisicing elit. Nostrum, natusipsum dolor sit amet consectetur adipisicing elit. Nostrum, natus</p>
+        </div>
+    </div>
+
+    <div class="portfolio">
+      
+    </div>
+
+    <div class="contact_scroll">
+      
+    </div>
+    <script type="module" src="components/app.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.5.0/gsap.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.5.0/ScrollTrigger.min.js"></script>
+    <script>
+      gsap.to(".box", {
+        scrollTrigger: {
+          trigger: ".box",
+          start: "top 20%",
+          // markers: true,
+        },
+        x: 700,
+      });
+
+      gsap.to(".second_box", {
+        scrollTrigger: {
+          trigger: ".box",
+          start: "top 15%",
+          // markers: true,
+        },
+        x: 500,
+      });
+
+      gsap.to(".third_box", {
+        scrollTrigger: {
+          trigger: ".box",
+          start: "top 30%",
+          // markers: true,
+        },
+        x: 580,
+      });
+
+      gsap.to(".copy_about_me",{
+        scrollTrigger: {
+          trigger: ".box",
+          start: "top 20%",
+          // markers: true,
+        },
+        x: -750,
+      });
+    </script>
+  </body>
+</html>
