@@ -51,4 +51,12 @@ const getWeather = () => {
   });
 };
 
+const enterKeyCheck = (e) => {
+  if (e.key === "Enter") {
+    getWeather();
+    console.log("test");
+  }
+};
+
 button.addEventListener("click", getWeather);
+input.addEventListener("keyup", enterKeyCheck);
